@@ -1,0 +1,50 @@
+button {
+	border: none;
+	border-radius: var(--button-border-rad);
+	padding: 0 18px;
+	height: 40px;
+	font-weight: normal;
+	background-color: var(--button-bg, #4a4a4a);
+	transition:
+		opacity 0.1s,
+		background-color 0.1s,
+		filter 0.2s,
+		scale 0.2s;
+	text-align: center;
+	outline: var(--button-glass-bg) 1px solid;
+	outline-offset: -1px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&:hover {
+		background-color: var(--button-glass-hover-bg);
+	}
+
+	&.lucide {
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+	}
+
+	&.suggested {
+		background: linear-gradient(
+			to bottom,
+			var(--accent-suggested-start) 0%,
+			var(--accent-suggested-end) 100%
+		);
+		color: var(--bg);
+		font-weight: bold;
+
+		&:hover {
+			filter: brightness(1.2);
+		}
+
+		&:active {
+			filter: brightness(0.9);
+		}
+	}
+}

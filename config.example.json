@@ -1,0 +1,18 @@
+{
+	"reArc": {
+		"serverUrl": "https://api.sacruda.nl",
+		"serverAuthCode": null,
+		"username": "USERNAME",
+		"password": "PASSWORD"
+	},
+	"pocketbase": {
+		"url": "https://pb.sacruda.nl",
+		"username": "USERNAME",
+		"password": "PASSWORD",
+		"authDatabase": "users"
+	},
+	"github": {
+		"repoOwner": "Sacruda",
+		"repoName": "v7"
+	}
+}

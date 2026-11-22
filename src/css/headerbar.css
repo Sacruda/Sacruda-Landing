@@ -1,0 +1,45 @@
+header {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	padding: 0 20vw;
+	gap: 60px;
+
+	div.branding {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		img {
+			height: 36px;
+		}
+
+		h1 {
+			font-size: 22px;
+		}
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		margin-right: auto;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			font-weight: 500;
+
+			&:hover {
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
+		}
+	}
+
+	div.links {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}
