@@ -1,0 +1,32 @@
+section.section-home-highlights div.highlights {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	margin-top: 60px;
+
+	div.highlight {
+		width: calc(50% - 30px);
+		display: flex;
+		gap: 30px;
+
+		h2 {
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 22px;
+		}
+
+		p {
+			margin: 0;
+		}
+		span.lucide {
+			font-size: 48px;
+			color: var(--accent-suggested-start);
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	section.section-home-highlights div.highlights div.highlight {
+		width: 100%;
+	}
+}

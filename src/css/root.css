@@ -1,5 +1,10 @@
 :root {
 	--bg: #111;
+	--bg-gradient-start: #13262c;
+	--bg-gradient-start-transparent: #13262caa;
+	--bg-gradient-end: #0c161a;
+	--bg-gradient-end-transparent: #0c161aaa;
+	--bg-transparent: #111a;
 	--fg: #dddddd;
 	--button-bg: #282828;
 	--button-hover-bg: #3a3a3a;
@@ -7,9 +12,34 @@
 	--button-glass-bg: #fff1;
 	--button-glass-hover-bg: #fff3;
 	--button-glass-active-bg: #0003;
-	--border: #393939 1px solid;
+	--border: #222222 1px solid;
 	--border-light: #5554 1px solid;
 	--button-border-rad: 10px;
 	--accent-suggested-start: #4cb8dc !important;
 	--accent-suggested-end: #33aed7 !important;
+
+	--clr-red-bg: #452929;
+	--clr-red-fg: #ff7e7e;
+	--clr-red-bright-fg: #ffbaba;
+	--clr-green-bg: #283e28;
+	--clr-green-fg: #72e070;
+	--clr-green-bright-fg: #bbffba;
+	--clr-yellow-bg: #49432e;
+	--clr-yellow-fg: #ffe073;
+	--clr-yellow-bright-fg: #ffeca8;
+	--clr-orange-bg: #543d1b;
+	--clr-orange-fg: #ffad32;
+	--clr-orange-bright-fg: #ffcb7d;
+	--clr-blue-bg: #273a48;
+	--clr-blue-fg: #96d3ff;
+	--clr-blue-bright-fg: #abdcff;
+	--clr-aqua-fg: #79ffd0;
+	--clr-aqua-bg: #214538;
+	--clr-aqua-bright-fg: #a3ffdf;
+	--clr-magenta-bg: #402145;
+	--clr-magenta-fg: #ed79ff;
+	--clr-magenta-bright-fg: #f3a3ff;
+	--clr-purple-bg: #2f2145;
+	--clr-purple-fg: #ac79ff;
+	--clr-purple-bright-fg: #c6a3ff;
 }

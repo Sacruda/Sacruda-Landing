@@ -4,7 +4,8 @@ button {
 	padding: 0 18px;
 	height: 40px;
 	font-weight: normal;
-	background-color: var(--button-bg, #4a4a4a);
+	background-color: var(--button-glass-bg, #4a4a4a);
+	backdrop-filter: blur(8px);
 	transition:
 		opacity 0.1s,
 		background-color 0.1s,
@@ -19,6 +20,21 @@ button {
 
 	&:hover {
 		background-color: var(--button-glass-hover-bg);
+
+		&:not(:disabled) {
+			cursor: pointer;
+		}
+	}
+
+	&:disabled {
+		outline: none !important;
+		opacity: 0.5;
+		background-color: var(--button-glass-bg);
+		cursor: not-allowed;
+	}
+
+	&:active {
+		background-color: var(--button-glass-active-bg);
 	}
 
 	&.lucide {
@@ -46,5 +62,15 @@ button {
 		&:active {
 			filter: brightness(0.9);
 		}
+	}
+
+	span {
+		min-width: fit-content;
+		display: block;
+		white-space: nowrap;
+	}
+
+	button {
+		min-width: fit-content;
 	}
 }

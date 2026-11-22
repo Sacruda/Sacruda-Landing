@@ -5,6 +5,9 @@
 @import url('./headerbar.css');
 @import url('./elements/button.css');
 @import url('./elements/icon.css');
+@import url('./hero.css');
+@import url('./section.css');
+@import url('./highlights.css');
 
 html,
 body {
@@ -22,4 +25,32 @@ body {
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+	.only-desktop {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.only-mobile {
+		display: none !important;
+	}
 }

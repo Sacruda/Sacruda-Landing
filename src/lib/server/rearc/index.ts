@@ -2,6 +2,7 @@ import axios, { toFormData, type AxiosInstance } from 'axios';
 import { Configuration } from '../config';
 import { Loggable } from '../logs';
 import type { StoreItem } from '../../../types/package';
+import type { ExpandedUserInfo, PublicUserInfo } from '../../../types/user';
 
 export class ReArcServer extends Loggable('ReArcServer') {
 	private static token: string;
@@ -62,6 +63,18 @@ export class ReArcServer extends Loggable('ReArcServer') {
 			);
 		} catch (e) {
 			this.Log(`Failed to get Sacruda store items: ${e}`);
+			return [];
+		}
+	}
+
+	public static async GetUsers(): Promise<ExpandedUserInfo[]> {
+		this.Log(`Getting users`);
+
+		try {
+			const response = await this.client!.get<ExpandedUserInfo[]>(`/admin/users/list`);
+			return response.data;
+		} catch (e) {
+			this.Log(`Failed to get Sacruda users: ${e}`);
 			return [];
 		}
 	}
