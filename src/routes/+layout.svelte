@@ -6,6 +6,7 @@
 	import type { LayoutProps } from './$types';
 	import { Psa } from '#lib/client/psa/index.ts';
 	import Footer from '../components/Footer.svelte';
+	import MobileNavigation from '../components/HeaderBar/MobileNavigation.svelte';
 
 	let { children }: LayoutProps = $props();
 
@@ -25,4 +26,5 @@
 	<HeaderBar />
 	{@render children()}
 	<Footer />
+	<MobileNavigation />
 {/if}
