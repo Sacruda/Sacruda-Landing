@@ -1,7 +1,6 @@
 {
 	"reArc": {
 		"serverUrl": "https://api.sacruda.nl",
-		"serverAuthCode": null,
 		"username": "USERNAME",
 		"password": "PASSWORD"
 	},

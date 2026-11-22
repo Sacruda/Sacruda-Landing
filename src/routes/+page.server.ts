@@ -21,12 +21,10 @@ export const load = (async () => {
 			image: storeItem.pkg.store?.image,
 			bannerUrl: StoreItemBanner(storeItem),
 			imageUrl: StoreItemImage(storeItem),
-            installCount: storeItem.installCount,
-            displayName: storeItem.pkg?.name ?? storeItem.name
+			installCount: storeItem.installCount,
+			displayName: storeItem.pkg?.name ?? storeItem.name
 		})
 	);
-
-    console.log(packages);
 
 	return { onlineCount: users.length, packages };
 }) satisfies PageServerLoad;

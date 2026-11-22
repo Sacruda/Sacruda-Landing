@@ -5,6 +5,7 @@
 	import TextButton from '../components/Button/TextButton.svelte';
 	import Hero from '../components/Hero.svelte';
 	import CallToAction from '../components/Hero/CallToAction.svelte';
+	import PsaBanner from '../components/PsaBanner.svelte';
 
 	let { onlineCount }: { onlineCount: number } = $props();
 </script>
@@ -30,7 +31,7 @@
 				>
 					Boot Sacruda
 				</TextButton>
-				<TextButton icon="chevron-down" onclick={() => {}}>Learn more...</TextButton>
+				<TextButton icon="chevron-down" onclick={() => location.href ='/#what-is'}>Learn more...</TextButton>
 			{/snippet}
 			{#snippet afterCta()}
 				{#if onlineCount}
@@ -41,5 +42,8 @@
 				{/if}
 			{/snippet}
 		</CallToAction>
+	{/snippet}
+	{#snippet overlayContent()}
+		<PsaBanner location="homePage" inlineLong className="home-page" />
 	{/snippet}
 </Hero>

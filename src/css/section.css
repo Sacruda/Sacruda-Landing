@@ -17,6 +17,10 @@ section.page-section {
 		line-height: 26px;
 		margin: 20px 0;
         margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 	}
 
 	img {

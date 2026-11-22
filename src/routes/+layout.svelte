@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { ReleaseLogo } from '#lib/client/images.ts';
+	import { Psa } from '#lib/client/psa/index.ts';
 	import { onMount } from 'svelte';
+	import Footer from '../components/Footer.svelte';
 	import HeaderBar from '../components/HeaderBar.svelte';
+	import MobileNavigation from '../components/HeaderBar/MobileNavigation.svelte';
 	import '../css/main.css';
 	import type { LayoutProps } from './$types';
-	import { Psa } from '#lib/client/psa/index.ts';
-	import Footer from '../components/Footer.svelte';
-	import MobileNavigation from '../components/HeaderBar/MobileNavigation.svelte';
 
 	let { children }: LayoutProps = $props();
 

@@ -27,7 +27,6 @@
 		<a href="https://docs.sacruda.nl/developers/getting-started/intro">
 			Learn how to develop apps
 		</a>
-
 		<span class="lucide icon-chevron-right"></span>
 	</p>
 </Section>

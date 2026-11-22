@@ -14,9 +14,6 @@ export class ReArcServer extends Loggable('ReArcServer') {
 
 		const client = axios.create({
 			baseURL: Configuration.reArc.serverUrl,
-			params: {
-				authcode: Configuration.reArc.serverAuthCode
-			},
 			responseType: 'json'
 		});
 

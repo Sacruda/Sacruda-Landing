@@ -4,11 +4,12 @@
 	interface Props {
 		page?: string;
 		backdropContent?: Snippet;
+		overlayContent?: Snippet;
 		leftContent?: Snippet;
 		rightContent: Snippet;
 	}
 
-	let { page, backdropContent, leftContent, rightContent }: Props = $props();
+	let { page, backdropContent, leftContent, rightContent, overlayContent }: Props = $props();
 	let className = $derived(page ? `${page}-page` : '');
 </script>
 
@@ -26,4 +27,9 @@
 			{@render rightContent()}
 		</div>
 	</div>
+	{#if overlayContent}
+		<div class="overlay-content">
+			{@render overlayContent()}
+		</div>
+	{/if}
 </div>

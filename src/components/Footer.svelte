@@ -10,7 +10,7 @@
 		<h3>Sacruda</h3>
 		<TextButton
 			icon="power"
-			className="desktop-only"
+			className="only-desktop"
 			onclick={() => window.open(RELEASE_OS_URL)}
 			suggested
 		>

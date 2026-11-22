@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { HeroScreenshot } from '#lib/client/images.ts';
-	import { Psa } from '#lib/client/psa/index.ts';
 	import Section from '../components/Section.svelte';
 	import type { PageProps } from './$types';
 	import Highlights from './Highlights.svelte';
@@ -15,6 +14,7 @@
 </svelte:head>
 
 <MainHero onlineCount={data.onlineCount} />
+
 <Section
 	name="what-is"
 	title="What is Sacruda?"

@@ -11,6 +11,10 @@
 @import url('./section.css');
 @import url('./highlights.css');
 @import url('./storeitems.css');
+@import url('./psa.css');
+@import url('./team.css');
+@import url('./history.css');
+@import url('./support.css');
 
 html,
 body {

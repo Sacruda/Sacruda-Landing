@@ -6,7 +6,6 @@ export interface TypedConfig {
 
 export interface ReArcConfig {
 	serverUrl: string;
-	serverAuthCode: string | null;
 	username: string;
 	password: string;
 }

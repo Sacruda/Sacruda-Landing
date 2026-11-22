@@ -11,20 +11,14 @@ export function sortByKey<T extends any[]>(array: T, key: keyof T[number], rever
 	}) as T;
 }
 
-export function authcode() {
-	return Configuration.reArc.serverAuthCode
-		? `?authcode=${Configuration.reArc.serverAuthCode}`
-		: '';
-}
-
 export function StoreItemImage(item: StoreItem) {
 	return item.pkg.store?.image
-		? `${Configuration.reArc.serverUrl}/store/assets/${item._id}/icon${authcode()}`
+		? `${Configuration.reArc.serverUrl}/store/assets/${item._id}/icon`
 		: '';
 }
 
 export function StoreItemBanner(item: StoreItem) {
 	return item.pkg.store?.banner
-		? `${Configuration.reArc.serverUrl}/store/assets/${item._id}/banner${authcode()}`
+		? `${Configuration.reArc.serverUrl}/store/assets/${item._id}/banner`
 		: '';
 }

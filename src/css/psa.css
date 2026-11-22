@@ -1,0 +1,58 @@
+div.psa-banner {
+	display: flex;
+	align-items: start;
+	gap: 8px;
+	min-height: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--button-glass-bg);
+	outline: var(--button-glass-hover-bg) 1px solid;
+	outline-offset: -1px;
+	margin: 10px 0;
+	z-index: 900;
+	position: relative;
+
+	span.lucide {
+		margin: 2px 0;
+		height: 15px;
+	}
+
+	&.severity-medium {
+		background-color: var(--clr-orange-bg);
+		color: var(--clr-orange-fg);
+
+		&.home-page {
+			background-color: var(--clr-orange-fg);
+			color: var(--clr-orange-bg);
+		}
+	}
+
+	&.severity-critical {
+		background-color: var(--clr-purple-bg);
+		color: var(--clr-purple-fg);
+
+		&.home-page {
+			background-color: var(--clr-purple-fg);
+			color: var(--clr-purple-bg);
+		}
+	}
+
+	&.severity-high {
+		background-color: var(--clr-red-bg);
+		color: var(--clr-red-fg);
+
+		&.home-page {
+			background-color: var(--clr-red-fg);
+			color: var(--clr-red-bg);
+		}
+	}
+
+	&.home-page {
+		margin: 20px;
+		min-height: 50px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 10px 20px;
+	}
+}
