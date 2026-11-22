@@ -13,7 +13,7 @@
 	let { name, title, subtitle, message, children, className }: Props = $props();
 </script>
 
-<section class="page-section section-{name} {className ?? ''}">
+<section class="page-section section-{name} {className ?? ''}" id={name}>
 	{#if title}
 		<h1 class="section-title">{title}</h1>
 	{/if}

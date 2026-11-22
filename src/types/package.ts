@@ -40,3 +40,16 @@ export interface ArcPackage {
 	dependencies?: string[];
 	type: 'app' | 'library';
 }
+
+export interface StoreOverviewItem {
+	_id: string;
+	displayName: string;
+	name: string;
+	description: string;
+	author: PublicUserInfo;
+	banner?: string;
+	image?: string;
+	bannerUrl?: string;
+	imageUrl?: string;
+	installCount: number;
+}

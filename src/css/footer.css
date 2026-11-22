@@ -1,0 +1,47 @@
+footer {
+	display: flex;
+	align-items: start;
+	padding: 60px;
+	border-top: var(--border);
+	flex-wrap: wrap;
+	background-color: var(--bg);
+    gap: 60px;
+
+	div.branding {
+		h3 {
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		img {
+			height: 64px;
+		}
+	}
+
+	div.links {
+		display: flex;
+		align-items: start;
+		gap: 60px;
+		margin-left: auto;
+		flex-wrap: wrap;
+
+		h4 {
+			opacity: 0.5;
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 16px;
+			white-space: nowrap;
+		}
+
+		a {
+			display: block;
+			line-height: 26px;
+			text-decoration: none;
+			text-underline-offset: 4px;
+			white-space: nowrap;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

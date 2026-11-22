@@ -31,10 +31,7 @@ header {
 		align-items: center;
 		gap: 0;
 		margin-right: auto;
-		background-color: var(--button-glass-active-bg);
 		height: 40px;
-		border-radius: 10px;
-		border: var(--button-glass-hover-bg) 1px solid;
 
 		a {
 			display: flex;

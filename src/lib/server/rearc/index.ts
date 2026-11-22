@@ -1,8 +1,9 @@
 import axios, { toFormData, type AxiosInstance } from 'axios';
+import type { StoreItem } from '../../../types/package';
+import type { ExpandedUserInfo } from '../../../types/user';
 import { Configuration } from '../config';
 import { Loggable } from '../logs';
-import type { StoreItem } from '../../../types/package';
-import type { ExpandedUserInfo, PublicUserInfo } from '../../../types/user';
+import { sortByKey } from '../util';
 
 export class ReArcServer extends Loggable('ReArcServer') {
 	private static token: string;
@@ -58,8 +59,17 @@ export class ReArcServer extends Loggable('ReArcServer') {
 
 		try {
 			const response = await this.client!.get<StoreItem[]>(`/store/list`);
-			return response.data.filter(
-				(item) => item.verifiedVer && item.verifiedVer === item.pkg?.version
+			return sortByKey(
+				response.data.filter(
+					(item) =>
+						item.verifiedVer &&
+						item.verifiedVer === item.pkg?.version &&
+						item.pkg?.type !== 'library' &&
+						!item.blocked &&
+						!item.deprecated
+				),
+				'installCount',
+				true
 			);
 		} catch (e) {
 			this.Log(`Failed to get Sacruda store items: ${e}`);

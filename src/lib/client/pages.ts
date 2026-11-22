@@ -6,13 +6,13 @@ export const NavigationPages: NavigationPage[] = [
 		name: 'Home'
 	},
 	{
-		href: '/#about',
+		href: '/about',
 		name: 'About'
 	},
 	{
-		href: '/docs',
+		href: 'https://docs.sacruda.nl',
 		name: 'Docs',
-		showActive: true
+		isExternal: true
 	},
 	{
 		href: '/support',
