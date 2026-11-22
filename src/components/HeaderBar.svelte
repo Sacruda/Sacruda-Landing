@@ -23,6 +23,10 @@
 			Boot Sacruda
 		</TextButton>
 		<IconButton icon="power" onclick={() => {}} suggested className="only-mobile boot" disabled />
-		<IconButton icon="git-branch" title="Go to the GitHub Repository" onclick={() => {}} disabled />
+		<IconButton
+			icon="git-branch"
+			title="Go to the GitHub Repository"
+			onclick={() => window.open('https://github.com/Sacruda/v7', '_blank')}
+		/>
 	</div>
 </header>

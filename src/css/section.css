@@ -51,6 +51,6 @@ section.page-section {
 
 @media screen and (max-width: 800px) {
 	section.page-section {
-		padding: 50px;
+		padding: 30px;
 	}
 }

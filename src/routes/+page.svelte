@@ -11,6 +11,10 @@
 	let { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+    <title>Home - Sacruda</title>
+</svelte:head>
+
 <Hero page="home">
 	{#snippet backdropContent()}
 		<img src={Img33} alt="" class="masked" />

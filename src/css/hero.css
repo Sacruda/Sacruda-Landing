@@ -128,4 +128,18 @@ div.hero {
 	div.hero.home-page div.hero-content div.right h1 {
 		font-size: 32px;
 	}
+
+	div.hero.home-page div.hero-content div.right p {
+		font-size: 20px;
+	}
+
+	div.hero.home-page div.hero-content div.right button.boot {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	div.hero.home-page {
+		margin-top: -80px;
+	}
 }

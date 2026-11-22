@@ -70,7 +70,7 @@ header {
 	header {
 		gap: 20px;
 		padding: 0 20px;
-		height: 80px;
+		height: 80px;   
 	}
 	header nav.site-navigation {
 		display: none;
