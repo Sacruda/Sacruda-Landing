@@ -179,6 +179,18 @@
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-auto/-/adapter-auto-8.0.1.tgz#ff1be25f96340e904b8f596fecd1c20f9e37cd71"
   integrity sha512-JXpRDJy/HxzhZsGS68C/SZ8BlndsfcGf/0X73WB05DAQJMR4Vi6k0hBYT+ZPgPxU4L0+G+irAHPN05YNCCGszA==
 
+"@sveltejs/adapter-node@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-6.0.5.tgz#cacfa86ddd7c792534a563630016774c3f5aadab"
+  integrity sha512-CcQ9Cnvns+PhI4tHKRrV63UcZqZ2+Dnaa4c65E9WSO932LsSpyWk9WLyiwUTRa7CLX5lCJAppoEEz1A0t6p8lQ==
+  dependencies:
+    "@sveltejs/adapter-server" "^0.1.0"
+
+"@sveltejs/adapter-server@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-server/-/adapter-server-0.1.0.tgz#b1de1f12c4ac950a926cc2758711154dd461a232"
+  integrity sha512-+IlBRTkHENyrVd24pTntoVqwonw2JjkZQD1kyZBnIqJsEtdHzLMdIs+b3p9AiWEzfTNZwVK/IaHGlzgyGiPX0w==
+
 "@sveltejs/kit@^3.2.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-3.4.0.tgz#544ca0e04ad55f79974183882b8e922473b3e08e"
