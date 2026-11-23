@@ -16,11 +16,11 @@ section.page-section {
 	p.section-message {
 		line-height: 26px;
 		margin: 20px 0;
-        margin-bottom: 50px;
+		margin-bottom: 50px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	img {
@@ -36,8 +36,9 @@ section.page-section {
 		margin-top: 5px;
 	}
 
-	+ section {
-		padding-top: 0;
+	+section:not(:last-of-type),
+	&:first-of-type {
+		padding-bottom: 0;
 	}
 }
 
