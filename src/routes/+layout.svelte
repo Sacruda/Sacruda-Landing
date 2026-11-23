@@ -24,7 +24,9 @@
 
 {#if !loading}
 	<HeaderBar />
-	{@render children()}
+	<main>
+		{@render children()}
+	</main>
 	<Footer />
 	<MobileNavigation />
 {/if}
