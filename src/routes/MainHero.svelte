@@ -16,9 +16,9 @@
 
 	function updateParallax() {
 		frame = 0;
-		if (!wallpaper) return;
+		if (!wallpaper?.parentElement) return;
 
-		const max = window.innerHeight * PARALLAX_SPEED;
+		const max = wallpaper.parentElement.clientHeight * PARALLAX_SPEED;
 		const offset = Math.min(window.scrollY * PARALLAX_SPEED, max);
 		wallpaper.style.transform = `translate3d(0, ${offset}px, 0)`;
 	}
