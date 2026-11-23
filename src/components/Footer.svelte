@@ -6,7 +6,7 @@
 
 <footer>
 	<div class="branding">
-		<img src={ReleaseLogo} alt="" />
+		<img src={ReleaseLogo} alt="The Sacruda Logo" />
 		<h3>Sacruda</h3>
 		<TextButton
 			icon="power"

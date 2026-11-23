@@ -26,7 +26,10 @@
 		<div class="admins">
 			{#each data.admins as admin (admin.username)}
 				<div class="person">
-					<img src={admin.profilePicture} alt="" />
+					<img
+						src={admin.profilePicture}
+						alt="The Sacruda profile picture of {admin.displayName || admin.username}"
+					/>
 					<h3 class="display-name">{admin.displayName || admin.username}</h3>
 					{#if admin.displayName}
 						<p class="username">{admin.username}</p>

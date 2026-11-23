@@ -42,7 +42,7 @@
 <Hero page="home">
 	{#snippet backdropContent()}
 		<div class="masked">
-			<img bind:this={wallpaper} src={RandomWallpaper()} alt="" class="parallax" />
+			<img bind:this={wallpaper} src={RandomWallpaper()} alt="" class="parallax" aria-hidden="true" />
 		</div>
 	{/snippet}
 	{#snippet rightContent()}
@@ -51,7 +51,7 @@
 			message="Sacruda is an advanced Web Operating System that runs in your browser. It's built with reliability and expandability in mind. Personally, I like it a lot."
 		>
 			{#snippet beforeHeader()}
-				<img src={ReleaseLogo} class="logo" alt="" />
+				<img src={ReleaseLogo} class="logo" alt="The Sacruda logo" />
 			{/snippet}
 			{#snippet actions()}
 				<TextButton

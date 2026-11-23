@@ -27,5 +27,5 @@
 		<p>Send one of us a message using Sacruda</p>
 	</button>
 
-	<img src={FireGif} alt="" />
+	<img src={FireGif} alt="" aria-hidden="true" />
 </Section>

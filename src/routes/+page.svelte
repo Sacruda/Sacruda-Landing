@@ -21,7 +21,7 @@
 	message="Sacruda is an advanced Web Operating System built with reliability and expandability in mind. I've been working hard for years to give you the WebOS experience you deserve. With Sacruda, everything you do is stored in the cloud, so that you can access your stuff from anywhere. Just pop open a browser, type in the address, log in and you're right back on your familiar desktop. Sacruda also has infrastructure put in place to allow users to make and distribute their own apps to other Sacruda users."
 >
 	<h3>What does it look like?</h3>
-	<img src={HeroScreenshot} alt="" class="hero-screenshot" />
+	<img src={HeroScreenshot} alt="A screenshot of Sacruda version 7.0.10, released July 4th, 2026." class="hero-screenshot" />
 	<i class="image-alt">Sacruda 7.0.10, back when it was still called ArcOS.</i>
 </Section>
 <Highlights />

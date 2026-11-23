@@ -15,7 +15,7 @@
 		className="mobile-nav-toggle"
 	/>
 	<div class="branding">
-		<img src={ReleaseLogo} alt="" />
+		<img src={ReleaseLogo} alt="The Sacruda Logo" />
 		<h1>Sacruda</h1>
 	</div>
 	<Navigation />
