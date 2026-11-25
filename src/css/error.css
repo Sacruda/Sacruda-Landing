@@ -1,0 +1,20 @@
+body:has(div.error-page) {
+	overflow: hidden;
+}
+
+div.error-page {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100svw;
+	height: 100svh;
+	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+    h1 {
+        font-size: 15vw;
+        opacity: 0.2;
+    }
+}
